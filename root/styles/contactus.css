@@ -1,0 +1,67 @@
+section h2 {
+	text-align: center;
+	font-size: 110%;
+}
+/*Sets up text inputs so they are aligned with each other*/
+#text1 {
+	margin-left: 30.1%;
+}
+#text2 {
+	margin-left: 18.7%;
+}
+#text3 {
+	margin-left: 30.3%;
+}
+.text {
+	margin: 1em;
+}
+label {
+	font-weight: bold;
+	color: red;
+}
+/*Gives fieldset a border and separates it from body border*/
+#contact {
+	border-color: red;
+	border-radius: 20px;
+	margin: 5em;
+	margin-right: 10em;
+	margin-left: 10em;
+}
+/*Spaces fieldset nested in outer fieldset*/
+#method {
+	border: 1.5px solid gray;
+	border-radius: 20px;
+	margin-right: 60%;
+}
+legend {
+	margin-left: 5%;
+	font-weight: bold;
+	height: 40%;
+}
+.pref {
+	margin-left: 10%;
+}
+/*Set up check boxes so they are aligned with each other*/
+#check1 {
+	margin-left: 13%;
+}
+#check2 {
+	margin-left: 42.3%;
+}
+#help {
+	margin-left: 12em;
+}
+#big {
+	margin-left: 8em;
+	height: 20px;
+	width: 50%;
+}
+/*Styles submit button*/
+.btn {
+	margin-left: 15.5em;
+	background-color: green;
+	color: white;
+	height: 30px;
+	width: 20%;
+	border: none;
+}

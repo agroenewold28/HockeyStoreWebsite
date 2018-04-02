@@ -1,0 +1,30 @@
+/*Aligns text and info to the center of the page
+ * and sizes images displayed
+ */
+section h2 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+#email {
+	text-align: center;
+	font-weight: bold;
+}
+#employees {
+	text-align: center;
+	text-decoration: underline;
+}
+div {
+	width: 33%;
+	display: inline-block;
+}
+div img {
+	width: 85%;
+	height: 60%;
+}
+div h4 {
+	font-size: 120%;
+	color: maroon;
+	font-weight: bold;
+}
+

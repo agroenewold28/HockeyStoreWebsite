@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Alex's Hockey Shop</title>
+		<meta name="description" content="">
+		<meta name="author" content="Alex">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		<link rel="stylesheet" type="text/css" href="styles/purchased.css">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	</head>
+
+	<body>
+		<header>
+			<h1>Alex's Hockey Shop</h1>
+			<h3>Providing for the best for over 50 years</h3>
+			<img src="images/logo.png">
+		</header>
+		<main>
+			<nav id="mobile">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="gear.html">Gear</a></li>
+					<li><a href="contactus.html">Contact Us</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
+					<li><a href="sponsers.html">Sponsors</a></li>
+				</ul>
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+				<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.9/jquery.transit.min.js"></script>
+				<script src="jquery.slicknav.js"></script>
+				<script type="text/javascript">
+					$(document).ready(function(){
+						$('#menu').slicknav({
+							prependTo:'#jquery'
+						});
+						
+						$('#menu').slicknav({
+							animations:'transit',
+							easingOpen: 'ease',
+							easingClose: 'ease',
+							prependTo:'#CSS3'
+						});
+					});
+				</script>
+			</nav>
+			<nav id="nav_bar">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="gear.html">Gear</a></li>
+					<li><a href="contactus.html">Contact Us</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
+					<li><a href="sponsers.html">Sponsors</a></li>
+				</ul>
+			</nav><br>
+			<br>
+			<!--Provide a thank you letter for the users purchase,
+				an option if they want their item picked up or
+				delivered, and a pop up window if delivery is 
+				chosen-->
+			<p>
+				Thank you for making a purchase from Alex's Hockey Shop!
+				We hope that your'e product gives you the highest level of performance 
+				possible. From all of us here at the shop, enjoy your'e 
+				product and we hope to see you again soon.
+			</p>
+			<img src="images/logo.png" id="closer"><br>
+			<br>
+			<h2>Would you like to pick up your'e item at the store or have it delivered to you?</h2><br>
+			<label for="pickup" id="pick">Pick Up</label>
+			<input type="radio">
+			<label for="delivery">Delivery</label>
+			<input type="radio" onclick="confirmation()"><br><br>
+			<a href="thankyou.html"><input type="submit" type="button" value="Submit" class="btn" id="submit"></a><br>
+			<br>
+			<script type="text/javascript">
+				function confirmation() {
+					alert("Note: There is a $5 dollar shipping fee with delivery orders");
+				}
+			</script>
+		</main>
+		<footer>
+			<a href="contactus.html">Contact Us!</a>
+			<p>39 Griswold Drive, Bellows Falls, VT</p>
+			<p>&copy;Alex Groenewold</p>
+		</footer>
+	</body>
+</html>

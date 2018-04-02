@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Alex's Hockey Shop</title>
+		<meta name="description" content="">
+		<meta name="author" content="Alex">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		<link rel="stylesheet" type="text/css" href="styles/gear.css">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	</head>
+
+	<body>
+		<header>
+			<h1>Alex's Hockey Shop</h1>
+			<h3>Providing for the best for over 50 years</h3>
+			<img src="images/logo.png">
+		</header>
+		<main>
+			<nav id="mobile">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="gear.html">Gear</a></li>
+					<li><a href="contactus.html">Contact Us</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
+					<li><a href="sponsers.html">Sponsors</a></li>
+				</ul>
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+				<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.9/jquery.transit.min.js"></script>
+				<script src="jquery.slicknav.js"></script>
+				<script type="text/javascript">
+					$(document).ready(function(){
+						$('#menu').slicknav({
+							prependTo:'#jquery'
+						});
+						
+						$('#menu').slicknav({
+							animations:'transit',
+							easingOpen: 'ease',
+							easingClose: 'ease',
+							prependTo:'#CSS3'
+						});
+					});
+				</script>
+			</nav>
+			<nav id="nav_bar">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="gear.html">Gear</a></li>
+					<li><a href="contactus.html">Contact Us</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
+					<li><a href="sponsers.html">Sponsors</a></li>
+				</ul>
+			</nav><br>
+			<h1 id="statement">Click on any item to purchase it!</h1><br>
+			<!--Display all types of gear on the screen and give the user
+				the option to clivk on any item and buy it-->
+			<section id="gear">
+				<div id="sticks">
+					<h2>Sticks</h2><br>
+					<a href="purchased.html"><img src="images/stick1.jpg"></a>
+					<h4>Bauer Total One Supreme</h4>
+					<h5>Price: $220</h5>
+					<a href="purchased.html"><img src="images/stick2.jpg"></a>
+					<h4>CCM Tacks</h4>
+					<h5>Price: $200</h5><br>
+					<a href="purchased.html"><img src="images/stick3.jpg"></a>
+					<h4>True Next Level</h4>
+					<h5>Price: $260</h5>
+				</div>
+				<div id="helmets">
+					<h2>Helmets</h2><br>
+					<a href="purchased.html"><img src="images/helmet1.jpg"></a>
+					<h4>Bauer Nexus 2</h4>
+					<h5>Price: $60</h5>
+					<a href="purchased.html"><img src="images/helmet2.jpg"></a>
+					<h4>CCM Vector</h4>
+					<h5>Price: $25</h5>
+					<a href="purchased.html"><img src="images/helmet3.jpg"></a>
+					<h4>Warrior Crown</h4>
+					<h5>Price: $85</h5>
+				</div>
+				<div id="bags">
+					<h2>Bags</h2><br>
+					<a href="purchased.html"><img src="images/bag1.jpg"></a>
+					<h4>Warrior, Black</h4>
+					<h5>Price: $50</h5>
+					<a href="purchased.html"><img src="images/bag2.jpg"></a>
+					<h4>Under Armor, Red</h4>
+					<h5>Price: $60</h5>
+					<a href="purchased.html"><img src="images/bag3.jpg"></a>
+					<h4>Grit</h4>
+					<h5>Price: $65</h5>
+				</div>
+				<div id="skates">
+					<h2>Skates</h2><br>
+					<a href="purchased.html"><img src="images/skates1.jpg"></a>
+					<h4>Reebok Pump's</h4>
+					<h5>Price: $300</h5>
+					<a href="purchased.html"><img src="images/skates2.jpg"></a>
+					<h4>Bauer Supreme</h4>
+					<h5>Price: $400</h5>
+					<a href="purchased.html"><img src="images/skates3.jpg"></a>
+					<h4>CCM Speed Burner</h4>
+					<h5>Price: $400</h5>
+				</div>
+				<div id="prot">
+					<h2>Other Gear</h2><br>
+					<a href="purchased.html"><img src="images/prot1.jpg"></a>
+					<h4>Bauer Gloves</h4>
+					<h5>Price: $30</h5>
+					<a href="purchased.html"><img src="images/prot2.jpg"></a>
+					<h4>Red Chest Pad</h4>
+					<h5>Price: $35</h5>
+					<a href="purchased.html"><img src="images/prot3.jpg"></a>
+					<h4>Red Shin Pads</h4>
+					<h5>Price: $20</h5>
+				</div>
+			</section><br>
+			<h2 id="ender">To view more gear, come to our store!</h2><br>
+		</main>
+		<footer>
+			<a href="contactus.html">Contact Us!</a>
+			<p>39 Griswold Drive, Bellows Falls, VT</p>
+			<p>&copy;Alex Groenewold</p>
+		</footer>
+	</body>
+</html>

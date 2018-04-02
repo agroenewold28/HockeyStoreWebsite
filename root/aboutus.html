@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Alex's Hockey Shop</title>
+		<meta name="description" content="">
+		<meta name="author" content="Alex">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		<link rel="stylesheet" type="text/css" href="styles/aboutus.css">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	</head>
+
+	<body>
+		<header>
+			<h1>Alex's Hockey Shop</h1>
+			<h3>Providing for the best for over 50 years</h3>
+			<img src="images/logo.png">
+		</header>
+		<main>
+			<nav id="mobile">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="gear.html">Gear</a></li>
+					<li><a href="contactus.html">Contact Us</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
+					<li><a href="sponsers.html">Sponsors</a></li>
+				</ul>
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+				<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.9/jquery.transit.min.js"></script>
+				<script src="jquery.slicknav.js"></script>
+				<script type="text/javascript">
+					$(document).ready(function(){
+						$('#menu').slicknav({
+							prependTo:'#jquery'
+						});
+						
+						$('#menu').slicknav({
+							animations:'transit',
+							easingOpen: 'ease',
+							easingClose: 'ease',
+							prependTo:'#CSS3'
+						});
+					});
+				</script>
+			</nav>
+			<nav id="nav_bar">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="gear.html">Gear</a></li>
+					<li><a href="contactus.html">Contact Us</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
+					<li><a href="sponsers.html">Sponsors</a></li>
+				</ul>
+			</nav><br>
+			<!--Section that will contain a header and a paragraph of
+				the history of the store-->
+			<section>
+				<h2>Our History</h2>
+				<p>
+					Alex's Hockey Shop was founded in 2014. It started out as 
+					something very little but has now grown into one of the largest 
+					and most significant hockey gear distributors. Alex's Hockey
+					Shop has now provided for a number of notable NHL Alumni and current
+					NHL superstars. The company sells all hockey gear for skaters and
+					goalies.
+				</p><br>
+				<p>
+					The shop has went through a number of struggles. In 2015, the company
+					almost when out of business. Luckily the shop recieved donations from 
+					a number of it's former and current customers.
+				</p>
+				<p><br>
+					Alex's Hockey Shop is comitted to providing all skil levels
+					with premier Hockey gear!
+				</p>
+			</section><br>
+			<!--Display notable employees-->
+				<h2 id="employees">Some of our best employees</h2><br>
+				<div id="alex">
+					<h4 id="alex">CEO: Alex Groenewold</h4>
+					<img src="images/employee1.jpg">
+				</div>
+				<div id="coop">
+					<h4>Manager: Cooper St. Germain</h4>
+					<img src="images/employee2.jpg">
+				</div>
+				<div id="josh">
+					<h4>Assistant Manager: Josh Turkowske</h4>
+					<img src="images/employee3.jpg">
+				</div><br>
+				<br>
+			<section id="carrers">
+				<h2>Interested in Working for US?</h2>
+				<p id="email">Email careers@alex'shockeyshop.com with your'e resume and cover letter</p>
+			</section><br>
+		</main>
+		<footer>
+			<a href="contactus.html">Contact Us!</a>
+			<p>39 Griswold Drive, Bellows Falls, VT</p>
+			<p>&copy;Alex Groenewold</p>
+		</footer>
+	</body>
+</html>

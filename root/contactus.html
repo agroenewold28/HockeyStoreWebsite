@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Alex's Hockey Shop</title>
+		<meta name="description" content="">
+		<meta name="author" content="Alex">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		<link rel="stylesheet" type="text/css" href="styles/contactus.css">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	</head>
+
+	<body>
+		<header>
+			<h1>Alex's Hockey Shop</h1>
+			<h3>Providing for the best for over 50 years</h3>
+			<img src="images/logo.png">
+		</header>
+		<main>
+			<nav id="mobile">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="gear.html">Gear</a></li>
+					<li><a href="contactus.html">Contact Us</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
+					<li><a href="sponsers.html">Sponsors</a></li>
+				</ul>
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+				<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.9/jquery.transit.min.js"></script>
+				<script src="jquery.slicknav.js"></script>
+				<script type="text/javascript">
+					$(document).ready(function(){
+						$('#menu').slicknav({
+							prependTo:'#jquery'
+						});
+						
+						$('#menu').slicknav({
+							animations:'transit',
+							easingOpen: 'ease',
+							easingClose: 'ease',
+							prependTo:'#CSS3'
+						});
+					});
+				</script>
+			</nav>
+			<nav id="nav_bar">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="gear.html">Gear</a></li>
+					<li><a href="contactus.html">Contact Us</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
+					<li><a href="sponsers.html">Sponsors</a></li>
+				</ul>
+			</nav><br>
+			<section>
+				<h2>Phone: 1-800-656-1212</h2>
+				<h2>Email: info@alex'shockeyshop.com</h2><br>
+				<h2>Or</h2><br>
+				<h2>Use our contact form</h2><br>
+			</section>
+			<br>
+			<!--Give user the option to fill out a form and 
+				leave a comment-->
+			<fieldset id="contact">
+				<legend>Contact Form</legend>
+				<label for="Name">Name: </label>
+				<input type="text" name="name" id="text1" class="text"><br>
+				<label for="number">Phone Number: </label>
+				<input type="text" name="number" id="text2" class="text"><br>
+				<label for="email">Email: </label>
+				<input type="text" name="email" id="text3" class="text"><br>
+				<fieldset id="method">
+					<legend>Preferred method of contact</legend>
+					<label for="mail" class="pref">Phone Number: </label>
+					<input type="checkbox" name="num" class="check" id="check1"><br>
+					<label for="mail" class="pref">Email: </label>
+					<input type="checkbox" name="mail" class="check" id="check2"><br>
+				</fieldset>
+				<br>
+				<label id="help">What can we do to help?</label><br>
+				<br>
+				<input type="text" id="big" name="big" placeholder="Feel free to leave any questions, comments, rants, etc."><br>
+				<br>
+				<a href="thankyou.html"><input type="submit" type="button" value="Submit" class="btn"></a><br>
+				<br>
+			</fieldset>
+		</main>
+		<footer>
+			<a href="contactus.html">Contact Us!</a>
+			<p>39 Griswold Drive, Bellows Falls, VT</p>
+			<p>&copy;Alex Groenewold</p>
+		</footer>
+	</body>
+</html>

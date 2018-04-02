@@ -1,0 +1,27 @@
+/*Aligns text so they are over the displayed gear,
+ * sizes all gear images so they are the same,
+ * displays borders after every gear category
+ */
+#statement, #ender {
+	text-align: center;
+}
+section {
+	padding-left: 7%;
+}
+div {
+	display: inline-block;
+	width: 17%;
+	border-right: 1px solid gray;
+	margin: 0;
+}
+div h2 {
+	text-decoration: underline;
+	text-align: center;
+}
+div img {
+	height: 102%;
+	width: 80%;
+}
+#prot {
+	border-right: none;
+}

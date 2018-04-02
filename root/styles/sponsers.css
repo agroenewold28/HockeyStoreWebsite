@@ -1,0 +1,16 @@
+/*Style the images of sponsors so they are 
+ * horizontally aligned and easy to navigate
+ */
+div ul {
+	padding-left: 12%;
+}
+#spons_list li {
+	display: inline-block;
+}
+div a {
+	color: black;
+}
+div h2 {
+	margin-left: 2.5em;
+	font-size: 200%;
+}

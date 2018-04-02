@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Alex's Hockey Shop</title>
+		<meta name="description" content="">
+		<meta name="author" content="Alex">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		<link rel="stylesheet" type="text/css" href="styles/mainpage.css">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	</head>
+
+	<body>
+		<header>
+			<!--Content for header-->
+			<h1>Alex's Hockey Shop</h1>
+			<h3>Providing for the best for over 50 years</h3>
+			<img src="images/logo.png">
+		</header>
+		<main>
+			<!--Content for mobile menu and regular navigation menu-->
+			<nav id="mobile">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="gear.html">Gear</a></li>
+					<li><a href="contactus.html">Contact Us</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
+					<li><a href="sponsers.html">Sponsors</a></li>
+				</ul>
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+				<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.9/jquery.transit.min.js"></script>
+				<script src="jquery.slicknav.js"></script>
+				<script type="text/javascript">
+					$(document).ready(function(){
+						$('#menu').slicknav({
+							prependTo:'#jquery'
+						});
+						
+						$('#menu').slicknav({
+							animations:'transit',
+							easingOpen: 'ease',
+							easingClose: 'ease',
+							prependTo:'#CSS3'
+						});
+					});
+				</script>
+			</nav>
+			<nav id="nav_bar">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="gear.html">Gear</a></li>
+					<li><a href="contactus.html">Contact Us</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
+					<li><a href="sponsers.html">Sponsors</a></li>
+				</ul>
+			</nav><br>
+			<!--Display slideshow of available gear-->
+			<section>
+				<div class="slideshow-container">
+					
+				  <div class="mySlides fade">
+				    <img src="images/gear1.jpg" style="width:100%">
+				  </div>
+				
+				  <div class="mySlides fade">
+				    <img src="images/gear2.jpg" style="width:100%">
+				  </div>
+				
+				  <div class="mySlides fade">
+				    <img src="images/gear3.jpg" style="width:100%">
+				  </div>
+				  
+				  <div class="mySlides fade">
+				    <img src="images/gear4.jpg" style="width:100%">
+				  </div>
+				  
+				  <div class="mySlides fade">
+				    <img src="images/gear5.jpg" style="width:100%">
+				  </div>
+				  
+				  <div class="mySlides fade">
+				    <img src="images/gear6.jpg" style="width:100%">
+				  </div>
+				
+				  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<br>
+				
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span> 
+				  <span class="dot" onclick="currentSlide(4)"></span> 
+				  <span class="dot" onclick="currentSlide(5)"></span> 
+				  <span class="dot" onclick="currentSlide(6)"></span> 
+				</div>
+				
+				<script>
+					var slideIndex = 1;
+					showSlides(slideIndex);
+					
+					function plusSlides(n) {
+					  showSlides(slideIndex += n);
+					}
+					
+					function currentSlide(n) {
+					  showSlides(slideIndex = n);
+					}
+					
+					function showSlides(n) {
+					  var i;
+					  var slides = document.getElementsByClassName("mySlides");
+					  var dots = document.getElementsByClassName("dot");
+					  if (n > slides.length) {slideIndex = 1} 
+					  if (n < 1) {slideIndex = slides.length}
+					  for (i = 0; i < slides.length; i++) {
+					      slides[i].style.display = "none"; 
+					  }
+					  for (i = 0; i < dots.length; i++) {
+					      dots[i].className = dots[i].className.replace(" active", "");
+					  }
+					  slides[slideIndex-1].style.display = "block"; 
+					  dots[slideIndex-1].className += " active";
+					}
+				</script>
+			</section><br>
+			<br>
+			<!--Content that displays a header and a paragraph about
+				the stores mission-->
+			<div id="mission">
+				<h2>Our Mission</h2>
+				<img src="images/headerImage.jpg">
+				<p>
+					Here at Alex's Hockey Shop, we compete to be the top
+					competitor among all others. We want the best on ice performance out of you, and we know you do too.
+					For years we have provided gear for NHL players like Patrice Bergeron.
+					We are comitted to providing 
+					all ages and all skill levels with premier hockey equitment.
+					Our hockey equitment is all professionally made and spent much time on.
+					If you are not completely satisfied with our gear, you can
+					return anything full price, no questions asked. When it comes to Ice Hockey,
+					Alex's Hockey shop is no doubt the place to be. 
+				</p>
+			</div>
+			<!--Display employee of the month and where to find the store
+				on social media-->
+			<aside id="employee">
+				<h2>Our Employee of the Month</h2>
+				<img src="images/employee.jpg">
+				<h4>May's employee of the month: CEO and owner, Alex Groenewold</h4>
+			</aside><br>
+			<br>
+			<aside id="social">
+				<h2>Follow us</h2>
+				<h5>Facebook: "Alex's Hockey Shop"</h5>
+				<h5>Twitter: @alexhockeyshop91</h5>
+				<h5>Instagram: @ahockey91</h5>
+			</aside><br>
+			<br>
+		</main>
+		<footer>
+			<!--Content for footer-->
+			<a href="contactus.html">Contact Us!</a>
+			<p>39 Griswold Drive, Bellows Falls, VT</p>
+			<p>&copy;Alex Groenewold</p>
+		</footer>
+	</body>
+</html>
